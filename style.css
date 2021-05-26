@@ -49,6 +49,7 @@ body{
 	position: absolute;
 	height: 1000px;
 	width: 200px;
+	padding: 10px;
 	right: 100%;
 	top: 100%;
 	background-color: rgba(34, 34, 34, 0.9);
@@ -64,6 +65,21 @@ body{
 }
 #header .left-menu-btn:hover ~ .left-menu-btn{
 	clip-path: circle(40% at 50% 50%);
+}
+#left-menu-img1{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#left-menu-img2{
+	display: inline-block;
+	width: calc(50% - 5px);
+	margin-right: 5px;
+}
+#left-menu-img3{
+	display: inline-block;
+	width: calc(50% - 5px);
+	margin-left: 5px;
 }
 #header .logo{
 	position: relative;
@@ -158,11 +174,11 @@ body{
 	pointer-events: none;
 }
 .box .inner{
-	position: absolute;
 	text-align: center;
 	font-size: 25px;
 }
 #box1 .inner{
+	position: absolute;
 	left: 75%;
 	top: 50%;
 	transform: translate(-75%, -50%);
@@ -171,6 +187,7 @@ body{
 	text-decoration-line: none; 
 }
 .btn-solid .btn{
+	font-family: font3;
 	height: 25px;
 	padding: 5px;
 	margin: 5px;
@@ -196,18 +213,19 @@ a.btn-solid{
 	text-decoration-line: none; 
 }
 .btn-trnsp .btn{
+	font-family: font3;
 	height: 25px;
 	padding: 5px;
 	margin: 5px;
 	display: inline-block;
 	vertical-align: middle;
 	background-color: transparent;
-	border: solid 3px #4400ff;
+	border: solid 3px #00fff7;
 	border-radius: 4px; 
 	display: inline-block;
 	font-size: 25px;
 	line-height: 25px;
-	color: #00fff7;
+	color: #4400ff;
 	transition-duration: 200ms;
 	transition-property: padding margin;
 }
@@ -239,9 +257,10 @@ a.btn-solid{
 #box2 .main-textblock{
 	font-family: font3;
 	 font-size: 20px;
-	 color: #fff;
+	 color: #00fff7;
 }
 #box2 .main-img{
+	margin-top: 50px;
 	height: 100px;
 }
 #box2 .line{
@@ -274,13 +293,162 @@ a.btn-solid{
 	left: 50%;
 	transform: translateX(-50%);
 }
+#box4{
+	padding: 100px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	min-height: 720px;
+	background-image: linear-gradient(
+		155deg,
+		#00fff7 1%,
+		#4400ff);
+	background-size: 100%;
+	text-align: center;
+}
+#box4 .inner{
+	color: #4400ff;
+	max-width: 450px;
+	text-align: left;
+	margin-left: uppercase;
+	margin-bottom: 100px;
+}
+#box4 .inner .big{
+	font-family: font1;
+	font-size: 30px;
+}
+#box4 .inner .small{
+	font-family: font3;
+	font-size: 20px;
+}
+#box4 .cards{
+	width: 100%
+	max-width: 3000px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#box4 .cards a{
+	text-decoration-line: none;
+}
+#box4 .card{
+	display: inline-block;
+	width: calc(50% - 10px);
+	opacity: 0.7;
+	transition-duration: 400ms;
+	transition-property: opacity;
+}
+#box4 .card:hover{
+	opacity: 1;
+}
+#box4 .card .text{
+	font-size: 30px;
+	color: #00fff7;
+	text-align: center;
+	width: 100%;
+}
+#box4 .card img{
+	width: 100%;
+	display: block;
+}
+#box5{
+	padding: 30px;
+	text-align: center;
+}
+#box5 .text{
+	font-family: font3;
+	font-size: 20px;
+	color: #00fff7;
+}
+#box5 iframe{
+	width: 640px;
+	height: 360px;
+	margin: 30px;
+}
+.btn-solid .btn{
+	font-family: font3;
+	height: 25px;
+	padding: 5px;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #4400ff;
+	border: solid 3px #4400ff;
+	border-radius: 4px; 
+	font-size: 25px;
+	line-height: 25px;
+	color: #00fff7;
+	transition-duration: 200ms;
+	transition-property: padding, margin;
+}
+.btn-solid .btn:hover{
+	padding: 8px;
+	margin: 2px;
+}
+#box6{
+	background-color: #00fff7;
+	text-align: center;
+}
+#box6 .cards{
+	
+}
+#box6 .cards .card{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	width: 360px;
+	height: 720px;
+	background-color: #4400ff;
+	box-shadow: 0 0 10px #000;
+	transition-duration: 500ms;
+	transition-property: transform, box-shadow;
+	transition-delay: 100ms;
+	transition-timing-function: ease-out;
+}
+#box6 .cards .card:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 0 25px #000;
+}
+#box6 .card-img{
+	width: 100%;
+}
+#box6 .text{
+	text-align: center;
+	color: #00fff7;
+}
+#box6 .date{
+	font-family: font3;
+	font-size: 15px;
+	color: #00fff7;
+}
+#box6 .big{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: font3;
+	font-size: 50px;
+	color: #00fff7;
+	text-transform: uppercase;
+}
+#box6 .small{
+	font-family: font3;
+	font-size: 30px;
+	color: #00fff7;
+}
+#box6 .cards .card1{
+	
+}
+#box6 .cards .card2{
+	
+}
+#box6 .cards .card3{
+	
+}
 #footer{
 	background-color: #111;
 	padding: 50px;
 	text-align: center;
-	color: #aaa;
+	color: #00fff7;
 }
-#footer span{
+#footer .text{
 	font-size: 20px;
 	margin: 10px;
 }
