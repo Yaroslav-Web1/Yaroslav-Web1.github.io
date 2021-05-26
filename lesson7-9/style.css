@@ -1,0 +1,186 @@
+body{
+margin: 0;
+	padding-top: 80px;
+}
+
+#top-menu{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: #222;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	font-size: 0;
+}
+#content-box{	
+	background-color: #6605f7;
+	width: 1100px;
+	min-height: 160px;
+	margin: auto;
+}
+#top-menu a{
+	text-decoration: none;
+}
+#top-menu .btn{
+	color: #fff;
+	display: inline-block;
+	background-color: #222;
+	font-size: 30px;
+	line-height: 30px;
+	height: 30px;
+	padding: 5px;
+	border: ridge 5px #6605f7;
+	margin: 7.5px;
+	margin-top: 15px;
+}
+#box1{
+	width: 100%;
+	position: relative;
+}
+#box1 .box-img{
+	width: 100%;
+}
+#box1 .inner{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50px;
+	right: 50px;
+}
+#box1 .inner .big-text{
+	font-size: 30px;
+	font-family: monospace;
+	color: #000000;
+	text-shadow: 0 0 5px #fff;
+}
+#box1 .inner .small-text{
+	font-size: 30px;
+	font-family: monospace;
+	color: #000000;
+	text-shadow: 0 0 5px #fff;
+}
+#box1 .inner a{
+	text-decoration: none;
+}
+#box1 .inner a .btn{
+	width: 250px;
+	padding: 10px;
+	border: ridge 5px #6605f7;
+	margin-top: 20px;
+	background-color: #222;
+	color: #fff;
+	font-size: 30px;
+	font-family: monospace;
+	text-align: center; 
+}
+#box2{
+	background-color: #030bfc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#box2 table{
+	margin: auto;
+}
+#box2 td{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+}
+#box2 .t-el{
+	height: 100%;
+	background-size: cover;
+	background-position: center;  
+	transition-duration: 400ms;
+}
+#box2 td:hover .t-el{
+	transform: scale(1.1);
+}
+#t-el-11{
+background-image: url("img/Rocket2.jpg");
+}
+#t-el-12{
+background-image: url("img/Rocket3.jpg");
+}
+#t-el-13{
+background-image: url("img/Rocket4.jpg");
+}
+#t-el-21{
+background-image: url("img/Rocket5.jpg");
+}
+#t-el-22{
+background-image: url("img/Rocket6.jpg");
+}
+#t-el-31{
+background-image: url("img/Rocket7.jpg");
+}
+#t-el-32{
+background-image: url("img/Rocket8.jpg");
+}
+#t-el-33{
+background-image: url("img/Rocket9.jpg");
+}
+#t-el-34{
+background-image: url("img/Rocket10.jpg");
+}
+#to-top{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 100px;
+	width: 100px;
+}
+	/*
+	stati - По умолчанию (ничего не меняет)
+	relative - Позволяет двигать елемент (top, left, right, bottom)
+	absolute - Делает элемент невидимым для других элементов,
+				элемент распологается относительно ближайшего
+				родителя с нетипичным possition
+	fixed - Делает элемент невидимым для других элементов,
+			элемент распологается относительно окна браузера
+	*/
+#box2 .caption{
+	position: absolute;
+	min-height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+}
+#box2 .caption .name{
+	font-size: 25px;
+	line-height: 25px; 
+	color: #fff;
+}
+#box2 .caption .text{
+	padding-left: 50%;
+	padding-right: 50% ;
+	font-size: 0;
+	color: #fff;
+	transition-duration: 300ms;
+	transition-property: padding-left, padding-right, font-size;
+}
+#box2 td:hover .text{
+	font-size: 20px;
+	padding-left: 0;
+	padding-right: 0;
+}
+#footer{
+	background-color: #222;
+	padding: 50px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #6605f7;
+}
+#footer a{
+	color: #6605f7;
+	text-decoration: none;
+}
+#footer a:hover{
+	text-decoration: underline;
+}
